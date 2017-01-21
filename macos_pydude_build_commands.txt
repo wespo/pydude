@@ -1,0 +1,2 @@
+pyi-makespec --onefile pydude.py
+pyinstaller pydude.spec
