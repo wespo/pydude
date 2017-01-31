@@ -76,8 +76,10 @@ c5517.parseAck = MethodType(parseAck, c5517);
 ## Release DSP Shield from reset
 time.sleep(sleepTime/1000.0)
 c5517.setRTS(True)
+c5517.setDTR(True)
 time.sleep(sleepTime/1000.0)
 c5517.setRTS(False)
+c5517.setDTR(False)
 print "Waiting for the target..."
 time.sleep(2);
 c5517.write("29"); #command to make DSP Shield go into programming mode.
