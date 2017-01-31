@@ -46,7 +46,7 @@ print "Port: " + port;
 if args.baud:
     baudrate = args.baud
 else:
-    baudrate = 57600
+    baudrate = 115200
 print "baudrate: " + str(baudrate)
 
 ##sleep argument
@@ -85,7 +85,7 @@ c5517.write("29"); #command to make DSP Shield go into programming mode.
 
 time.sleep(sleepTime/1000.0);
 #c5517.flush();
-c5517.baudrate = 115200; #set serial to max baudrate for data transfer.
+#c5517.baudrate = 115200; #set serial to max baudrate for data transfer.
 #c5517.flush();
 c5517.parseAck("Ready");
 #time.sleep(sleepTime/1000.0);
