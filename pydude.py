@@ -53,7 +53,7 @@ print "baudrate: " + str(baudrate)
 if args.sleep:
     sleepTime = int(args.sleep)
 else:
-    sleepTime = 50
+    sleepTime = 10
 print "sleep time: " + str(sleepTime)
 
 ##infile
@@ -79,7 +79,7 @@ c5517.setRTS(True)
 time.sleep(sleepTime/1000.0)
 c5517.setRTS(False)
 print "Waiting for the target..."
-time.sleep(3.5);
+time.sleep(2);
 c5517.write("29"); #command to make DSP Shield go into programming mode.
 #c5517.write('9'); #command to make DSP Shield go into programming mode.
 
